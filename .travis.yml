@@ -1,0 +1,17 @@
+language: node_js
+
+node_js:
+  - stable
+
+install:
+  - npm install
+
+script:
+  - npm run cover
+
+after_success:
+  - bithound check git@github.com:lmsp/react-ui-library-starter.git
+
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/

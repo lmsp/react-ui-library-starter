@@ -1,0 +1,57 @@
+{
+  "name": "react-ui-library-starter",
+  "author": "Luis Miguel Santamaría Pérez",
+  "version": "0.0.0",
+  "description": "Libraría básica para crear componentes con React",
+  "main": "dist/react-ui-library-starter.js",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "flow",
+      "env"
+    ]
+  },
+  "engines": {
+    "node": ">=8.6.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "bithound": "^1.7.0",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.8.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-flow": "^1.0.1",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "file-loader": "^1.1.5",
+    "flow-bin": "^0.57.2",
+    "generate-changelog": "^1.5.0",
+    "happypack": "^4.0.0",
+    "jest": "^21.2.1",
+    "source-map-loader": "^0.2.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.7.1"
+  },
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js -p",
+    "dev": "webpack --config ./webpack.config.js",
+    "test": "jest",
+    "cover": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'Actualizar CHANGELOG.md' && npm version minor && git push origin master --tags && sudo npm publish",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'Actualizar CHANGELOG.md' && npm version major && git push origin master --tags && sudo npm publish",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'Actualizar CHANGELOG.md' && npm version patch && git push origin master --tags && sudo npm publish"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lmsp/react-ui-library-starter.git"
+  }
+}
