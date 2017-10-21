@@ -23,6 +23,7 @@
     "babel-preset-flow": "^6.23.0",
     "bithound": "^1.7.0",
     "coveralls": "^3.0.0",
+    "documentation": "^5.3.3",
     "eslint": "^4.8.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-config-standard-flow": "^1.0.1",
