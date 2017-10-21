@@ -43,6 +43,7 @@
   "scripts": {
     "build": "webpack --config ./webpack.config.js -p",
     "dev": "webpack --config ./webpack.config.js",
+    "doc": "./node_modules/documentation/bin/documentation.js build src/** -f md -g -o API.md && git add API.md && git commit -m 'docs(app): Actualizar documentación' && git push origin master",
     "test": "jest",
     "cover": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'Actualizar CHANGELOG.md' && npm version minor && git push origin master --tags && sudo npm publish",
