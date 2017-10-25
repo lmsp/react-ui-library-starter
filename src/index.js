@@ -1,16 +1,8 @@
 /* @flow */
-/**
- * Un objeto Index
- */
-export default class Index {
-  constructor () {
-    this._name = 'MyIndex'
-  }
-  /**
-   * Devuelve un nombre
-   * @returns {String} el nombre actual
-   */
-  get name () {
-    return this._name
-  }
-}
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+const element = <h1>Hello, world!!!</h1>
+ReactDOM.render(element, document.getElementById('app'))
+
+if (module.hot) module.hot.accept()

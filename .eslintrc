@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  "extends": ["standard", "standard-flow"],
+  "extends": ["standard", "standard-flow", "standard-react"],
   "env": {
     "jest": true
   }
