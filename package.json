@@ -1,7 +1,7 @@
 {
   "name": "react-ui-library-starter",
   "author": "Luis Miguel Santamaría Pérez",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Libraría básica para crear componentes con React",
   "main": "dist/react-ui-library-starter.js",
   "license": "MIT",
