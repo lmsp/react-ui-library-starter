@@ -8,7 +8,8 @@
   "babel": {
     "presets": [
       "flow",
-      "env"
+      "env",
+      "react"
     ]
   },
   "engines": {
@@ -44,6 +45,7 @@
     "happypack": "^4.0.0",
     "html-webpack-plugin": "^2.30.1",
     "jest": "^21.2.1",
+    "raf": "^3.4.0",
     "react-hot-loader": "^3.1.1",
     "source-map-loader": "^0.2.1",
     "url-loader": "^0.6.2",
@@ -63,6 +65,11 @@
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
+  },
+  "jest": {
+    "setupFiles": [
+      "raf/polyfill"
+    ]
   },
   "repository": {
     "type": "git",

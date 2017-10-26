@@ -2,7 +2,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const element = <h1>Hello, world!!!</h1>
-ReactDOM.render(element, document.getElementById('app'))
+import HelloWorld from './components/HelloWorld'
+
+ReactDOM.render(<HelloWorld />, document.getElementById('app'))
 
 if (module.hot) module.hot.accept()
